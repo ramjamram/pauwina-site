@@ -296,8 +296,45 @@ PAGES["chapter-5.html"] = chapter("chapter-5.html", "5", "Customs, by yourself",
       <span>Don't pay and walk away angry. Ask how they reached the value, show your used values and receipts, and ask about filing a protest. The deadline is short, so ask on the spot.</span>
     </div>
 
-    <h2>When a broker is worth it</h2>
-    <p>If you can't take several weekdays off, don't live near the port, or customs flags your shipment for a full inspection. Hire one for the <em>filing only</em>, with the fee in writing.</p>""",
+    <h2 id="broker">Do it yourself, or hire a broker?</h2>
+    <p>The law doesn't require a broker if you're the consignee: you can file the declaration yourself. Here's how to decide.</p>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th scope="col" class="ok">Doing it yourself makes sense if…</th><th scope="col">A broker is worth it if…</th></tr></thead>
+      <tbody>
+        <tr><td>Your name is on the bill of lading as consignee</td><td>Someone else has to clear it for you, or you're still abroad</td></tr>
+        <tr><td>You live near the port and can take several weekdays off</td><td>You can't take weekdays off, or you live far from the port</td></tr>
+        <tr><td>It's ordinary used household goods</td><td>There's a vehicle, many of the same item, or anything needing a permit</td></tr>
+        <tr><td>Your papers are complete: bill of lading, valued list, PHED, passports</td><td>Customs flags your shipment for a full inspection, or the assessment is disputed</td></tr>
+        <tr><td>You're patient with queues and repeat visits</td><td>You're up against the free days or the 15-day deadline</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>What a broker is, and what only they can do</h3>
+    <p>A customs broker is a <strong>licensed professional</strong> regulated by the Professional Regulation Commission (PRC) under the Customs Brokers Act (RA 9280). When you hire one, the declaration is filed and signed under <em>their</em> license. Before you hire, ask for their PRC license number and check it. People who aren't licensed shouldn't be preparing or filing customs paperwork for a fee, whatever they call themselves.</p>
+
+    <h3>What brokers should charge</h3>
+    <p>There is an official schedule of brokerage fees (Customs Administrative Order 1-2001). Household goods usually go through informal entry, where the official brokerage fee is <strong>₱469.22 to ₱700 per entry</strong>. For formal entries, the fee rises with the shipment's dutiable value; above ₱200,000 it is ₱5,300 plus 0.375% of the amount over ₱200,000.</p>
+    <p>In practice brokers often charge more than the schedule, and the schedule itself is being reviewed by the Bureau of Customs and the brokers' association. But it tells you something important: <strong>the broker's own fee should be a small part of your total.</strong> Most of a big quote is usually duties and VAT, port and shipping-line charges, storage, and trucking. Those are paid to someone else, with official receipts.</p>
+
+    <div class="box box-amber stack" style="gap:8px">
+      <h3 style="font-size:20px">Got a big "all-in" quote? Ask these five questions</h3>
+      <ol>
+        <li>How much of this is <strong>duties and VAT</strong>, and how did you compute it?</li>
+        <li>How much is <strong>port, terminal and shipping-line charges</strong>?</li>
+        <li>How much is <strong>storage or container late fees</strong>, and from what date?</li>
+        <li>How much is <strong>trucking</strong>?</li>
+        <li>What is <strong>your own professional fee</strong>, and what's your PRC license number?</li>
+      </ol>
+      <span>A good broker answers all five in writing and gives you official receipts for everything paid to the government, port and shipping line. If they won't, get another quote. Use our <a href="costs.html">duty estimator</a> to sanity-check the duties.</span>
+    </div>
+
+    <h3>If you do hire one</h3>
+    <ul>
+      <li>Hire for the <strong>filing only</strong> if you can handle the shipping line and trucking yourself. It's cheaper.</li>
+      <li>Get the fee <strong>in writing before</strong> you hand over documents.</li>
+      <li>Keep copies of everything you give them, and ask for copies of everything they file.</li>
+      <li>Don't hand over cash for "facilitation" without an official receipt.</li>
+    </ul>""",
 ("chapter-4.html", "4 · It's arrived"), ("chapter-6.html", "6 · Release &amp; delivery"),
 "How to clear household goods through Philippine customs yourself: documents, informal entry, PHED, x-ray, assessment, and when a broker is worth it.")
 
@@ -379,7 +416,7 @@ PAGES["costs.html"] = page("costs.html", "What it costs: Manila port charges and
         <tr><td>Duties and VAT</td><td class="muted">Bureau of Customs</td><td><strong>Use the estimator</strong></td></tr>
         <tr><td>Trucking to your home</td><td class="muted">Trucker</td><td>₱9,000–25,000 (Metro Manila)</td></tr>
         <tr><td>Storage and late container return</td><td class="muted">Terminal / line</td><td style="color:var(--rust);font-weight:600">₱0 if you're fast</td></tr>
-        <tr><td>Customs broker (optional)</td><td class="muted">Broker</td><td>Get it itemized</td></tr>
+        <tr><td>Customs broker (optional)</td><td class="muted">Broker</td><td>Official rate ₱469–700 per informal entry; market rates higher. <a href="chapter-5.html#broker">What to expect</a></td></tr>
       </tbody>
     </table></div>
     <p class="muted" style="font-size:14px;margin:12px 0 0">Ranges are rough estimates from families' experience, last checked """ + CHECKED + """. Charges change. Ask your shipping line for its current invoice.</p></div>
@@ -571,7 +608,8 @@ TERMS = [
     ("CMTA", "Customs Modernization and Tariff Act (Republic Act 10863), the main Philippine customs law. Section 800(f) covers returning residents' household goods."),
     ("Consignee", "The person named on the bill of lading as receiving the goods. Only the consignee (or their authorized agent) can clear the container."),
     ("Container deposit", "Money the shipping line holds until you return the empty container. Refundable, minus any late-return charges."),
-    ("Customs broker", "A licensed professional who files customs declarations for others. Optional for household goods if you're the consignee."),
+    ("Customs broker", "A PRC-licensed professional (RA 9280) who prepares and files customs declarations for others. Optional for household goods if you're the consignee."),
+    ("Brokerage fee", "The customs broker's own professional fee, separate from duties, VAT, port charges and trucking. The official schedule (CAO 1-2001) sets ₱469.22 to ₱700 per informal entry."),
     ("Delivery order (DO)", "The shipping line's release paper. The terminal won't hand over your container without it."),
     ("Demurrage", "Daily charges when a full container stays at the port past its free days."),
     ("Detention", "Daily charges when you keep the shipping line's container outside the port too long before returning it empty."),
