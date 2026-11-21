@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What it costs: Manila port charges and duty estimator | Pauwi Na</title>
+<meta name="description" content="Typical Manila-side charges for a 20-foot container of household goods, plus a rough duty and VAT estimator for returning residents.">
+<link rel="canonical" href="https://pauwina.com/costs.html">
+<meta property="og:title" content="What it costs: Manila port charges and duty estimator | Pauwi Na">
+<meta property="og:description" content="Typical Manila-side charges for a 20-foot container of household goods, plus a rough duty and VAT estimator for returning residents.">
+<meta property="og:url" content="https://pauwina.com/costs.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pauwi Na">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Pauwi Na<span>.</span><small>The balikbayan container guide</small></a>
+    <nav class="nav" aria-label="Main"><a href="chapter-1.html">The guide</a><a href="checklist.html">Am I ready?</a><a href="carriers.html">Carriers</a><a href="ai-helper.html">AI helper</a><a href="costs.html" aria-current="page">Costs</a><a href="glossary.html">Glossary</a></nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap" style="padding:56px 24px 80px;display:flex;flex-direction:column;gap:44px">
+  <div class="stack" style="gap:12px;max-width:720px">
+    <p class="eyebrow">What it really costs</p>
+    <h1>Where your money goes once the ship docks.</h1>
+    <p class="lead" style="max-width:none">The freight you paid abroad is only part of it. These are the charges waiting in Manila for a 20-foot container of household goods.</p>
+  </div>
+  <div class="two-col">
+    <div class="main"><div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th scope="col">Charge</th><th scope="col">Paid to</th><th scope="col">Typical (estimate)</th></tr></thead>
+      <tbody>
+        <tr><td>Local charges and delivery order</td><td class="muted">Shipping line</td><td>₱17,000–35,000</td></tr>
+        <tr><td>Container deposit</td><td class="muted">Shipping line</td><td>Refundable, varies by line</td></tr>
+        <tr><td>Port handling (arrastre) and wharfage</td><td class="muted">Terminal</td><td>₱6,000–15,000</td></tr>
+        <tr><td>Customs fees, stamps, x-ray</td><td class="muted">Bureau of Customs</td><td>₱2,000–6,000</td></tr>
+        <tr><td>Duties and VAT</td><td class="muted">Bureau of Customs</td><td><strong>Use the estimator</strong></td></tr>
+        <tr><td>Trucking to your home</td><td class="muted">Trucker</td><td>₱9,000–25,000 (Metro Manila)</td></tr>
+        <tr><td>Storage and late container return</td><td class="muted">Terminal / line</td><td style="color:var(--rust);font-weight:600">₱0 if you're fast</td></tr>
+        <tr><td>Customs broker (optional)</td><td class="muted">Broker</td><td>Get it itemized</td></tr>
+      </tbody>
+    </table></div>
+    <p class="muted" style="font-size:14px;margin:12px 0 0">Ranges are rough estimates from families' experience, last checked November 2026. Charges change. Ask your shipping line for its current invoice.</p></div>
+
+    <aside class="aside"><div class="card est" aria-label="Duty estimator">
+      <h2 style="font-size:26px">Duty estimator</h2>
+      <div class="stack" style="gap:6px">
+        <label for="val" style="font-weight:600;font-size:15px">What your goods are worth today (used)</label>
+        <div class="big" id="valText">₱250,000</div>
+        <input id="val" type="range" min="0" max="1000000" step="10000" value="250000">
+      </div>
+      <div class="stack" style="gap:8px">
+        <span id="caplabel" style="font-weight:600;font-size:15px">Your duty-free allowance</span>
+        <div class="caps" role="group" aria-labelledby="caplabel">
+          <button type="button" class="opt" data-cap="0" aria-pressed="true">None</button>
+          <button type="button" class="opt" data-cap="150000" aria-pressed="false">₱150,000</button>
+          <button type="button" class="opt" data-cap="250000" aria-pressed="false">₱250,000</button>
+          <button type="button" class="opt" data-cap="350000" aria-pressed="false">₱350,000</button>
+        </div>
+      </div>
+      <div class="sum" aria-live="polite">
+        <div><span>Taxable after allowance</span><strong id="taxable">₱250,000</strong></div>
+        <div><span>Duty (~15%)</span><strong id="duty">₱37,500</strong></div>
+        <div><span>VAT (12%)</span><strong id="vat">₱34,500</strong></div>
+        <div class="total"><span style="font-weight:600">Rough total</span><strong id="total">₱72,000</strong></div>
+      </div>
+      <p class="muted" style="margin:0;font-size:13px;line-height:1.55">A rough guide only. Customs sets the value and the rates, and it can add freight and other charges to the taxable amount.</p>
+    </div></aside>
+  </div>
+  <div class="box box-amber stack" style="gap:10px;max-width:860px">
+    <h2 style="font-size:24px">Quoted a huge number? Ask for the breakdown.</h2>
+    <p style="margin:0;font-size:17px">A ₱500,000 quote for a container of used furniture should raise questions. Ask what share is duties, storage, port fees, and the broker's own fee. Then compare it with this page.</p>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Pauwi Na</strong> is a free guide written by families who've shipped their homes back to the Philippines. It isn't legal advice, and customs rules change. Always confirm with the Bureau of Customs.</p>
+    <p>Sources: Customs Modernization and Tariff Act (RA 10863), CAO 06-2016, CMO 15-2017. <a href="glossary.html#links">Official links</a> · Last checked November 2026.</p>
+    <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a></p>
+  </div>
+</footer>
+</body>
+</html>

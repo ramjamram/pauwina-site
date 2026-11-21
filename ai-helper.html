@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI helper: ready-made prompts for ChatGPT and Claude | Pauwi Na</title>
+<meta name="description" content="Copy-and-paste AI prompts to read your arrival notice, value your inventory, and draft customs letters for your balikbayan container.">
+<link rel="canonical" href="https://pauwina.com/ai-helper.html">
+<meta property="og:title" content="AI helper: ready-made prompts for ChatGPT and Claude | Pauwi Na">
+<meta property="og:description" content="Copy-and-paste AI prompts to read your arrival notice, value your inventory, and draft customs letters for your balikbayan container.">
+<meta property="og:url" content="https://pauwina.com/ai-helper.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pauwi Na">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Pauwi Na<span>.</span><small>The balikbayan container guide</small></a>
+    <nav class="nav" aria-label="Main"><a href="chapter-1.html">The guide</a><a href="checklist.html">Am I ready?</a><a href="carriers.html">Carriers</a><a href="ai-helper.html" aria-current="page">AI helper</a><a href="costs.html">Costs</a><a href="glossary.html">Glossary</a></nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap" style="padding:56px 24px 80px;display:flex;flex-direction:column;gap:36px">
+  <div class="stack" style="gap:12px;max-width:760px">
+    <p class="eyebrow">AI helper</p>
+    <h1>Let AI do the paperwork with you.</h1>
+    <p class="lead" style="max-width:none">You don't need to know how to "prompt." Copy one of these into ChatGPT, Claude or Gemini, attach your document, and fill in the blanks in [BRACKETS].</p>
+  </div>
+  <div class="grid">
+    <div class="box box-blue stack" style="gap:10px">
+      <h2 style="font-size:22px">Pauwi Na in ChatGPT and Claude</h2>
+      <p style="margin:0">Soon you'll be able to add Pauwi Na straight into ChatGPT (as a custom GPT) and Claude (as a skill), with this whole guide built in.</p>
+      <span class="muted" style="font-size:15px">Coming soon.</span>
+    </div>
+    <div class="box box-amber stack" style="gap:10px">
+      <h2 style="font-size:22px">Protect your personal details</h2>
+      <p style="margin:0">Use your own AI account. Before uploading, cover your <strong>passport number</strong>, date of birth and bank details. The AI doesn't need them to help.</p>
+    </div>
+  </div>
+  <div class="stack" style="gap:20px"><div class="card prompt" id="arrival">
+      <h3>Read my arrival notice</h3>
+      <p class="muted" style="margin:0;font-size:15px">Upload your arrival notice (PDF or photo) along with this prompt.</p>
+      <pre id="p-arrival">I&#x27;m a returning resident shipping household goods to the Philippines by container. I&#x27;ve attached my shipping line&#x27;s arrival notice.
+
+1. Pull out: vessel name, ETA, port of discharge, pick-up terminal, bill of lading number, container number, consignee name, and whether the bill of lading is &quot;Original&quot; or telex/express release.
+2. I arrived in the Philippines on [MY ARRIVAL DATE]. Work out my 60-day date for the returning-resident duty exemption, and tell me if this shipment is inside or outside it.
+3. List my deadlines as dates: the carrier&#x27;s free days (if shown), the 15-day customs filing deadline from unloading, and the 30-day abandonment risk.
+4. Tell me the next 3 things I should do, in order.
+
+Explain in plain English. If something isn&#x27;t on the notice, say so instead of guessing.</pre>
+      <button type="button" class="btn btn-primary" data-copy="p-arrival">Copy prompt</button>
+    </div>
+<div class="card prompt" id="inventory">
+      <h3>Turn my mover's list into a valued inventory</h3>
+      <p class="muted" style="margin:0;font-size:15px">Attach a photo of your handwritten inventory.</p>
+      <pre id="p-inventory">I&#x27;ve attached the household goods inventory from my movers. Turn it into a typed table for Philippine customs with columns: Item no. | Plain description (say &quot;used&quot; and the material/size, e.g. &quot;used 3-seat fabric couch&quot;) | Quantity | Estimated used value in PHP.
+
+Rules:
+- Use realistic second-hand values for the Philippines, not what I paid new.
+- Describe printed art as &quot;framed prints, reproductions&quot;.
+- Flag anything that could look like commercial quantity, or that may need a permit (plants, seeds, raw wood, medicines, pets, vehicles).
+- If you can&#x27;t read an item, write [UNCLEAR] instead of guessing.
+At the end, total the values and list the items I should double-check.</pre>
+      <button type="button" class="btn btn-primary" data-copy="p-inventory">Copy prompt</button>
+    </div>
+<div class="card prompt" id="letter">
+      <h3>Draft my exemption request (late shipment)</h3>
+      <p class="muted" style="margin:0;font-size:15px">For when your goods arrived after the 60-day window.</p>
+      <pre id="p-letter">Help me write a polite, formal letter to the Department of Finance Revenue Office (copy to the Bureau of Customs, [PORT]) asking them to still grant the returning-resident tax and duty exemption under CMTA Section 800(f) and CAO 06-2016, even though my household goods arrived after the 60-day window.
+
+My facts:
+- Name: [NAME], Filipino citizen, lived in [COUNTRY] for [YEARS] years
+- Arrived in the Philippines: [DATE]
+- Goods picked up from my home: [DATE]; sailed from [PORT] on [DATE]; arrived Manila [DATE]
+- Bill of lading no.: [B/L NO.]
+- Reason for delay: [e.g. forwarder consolidation, trucking to another state&#x27;s port, vessel schedule]
+
+Keep it to one page. Explain that the delay was outside my control, list the documents I&#x27;m attaching, and ask for consideration. Don&#x27;t invent facts. Leave blanks for anything I haven&#x27;t given you.</pre>
+      <button type="button" class="btn btn-primary" data-copy="p-letter">Copy prompt</button>
+    </div>
+<div class="card prompt" id="extension">
+      <h3>Request a 15-day filing extension</h3>
+      <p class="muted" style="margin:0;font-size:15px">Send before the first 15 days after unloading run out.</p>
+      <pre id="p-extension">Write a short, formal letter to the District Collector, Bureau of Customs, [PORT, e.g. Manila International Container Port], requesting a 15-day extension to file the goods declaration for my household goods shipment, as allowed under the CMTA.
+
+Details: consignee [NAME]; bill of lading [B/L NO.]; container [CONTAINER NO.]; vessel [VESSEL/VOYAGE]; discharged on [DATE].
+Reason: [e.g. waiting for the original bill of lading / DOF exemption indorsement].
+Keep it under 200 words, with blanks for anything missing.</pre>
+      <button type="button" class="btn btn-primary" data-copy="p-extension">Copy prompt</button>
+    </div>
+<div class="card prompt" id="quote">
+      <h3>Explain a quote or invoice</h3>
+      <p class="muted" style="margin:0;font-size:15px">Paste or attach a broker's quote or a shipping line invoice.</p>
+      <pre id="p-quote">I&#x27;ve attached a quote/invoice for clearing my household goods container in Manila. For each line:
+1. Explain in plain English what it is and who it is paid to (shipping line, terminal, Bureau of Customs, broker, trucker).
+2. Say whether it&#x27;s normally a government charge, a pass-through cost, or the broker&#x27;s own fee.
+3. Flag anything that looks unusual, duplicated, or high, and what questions I should ask.
+Then give me a short summary: how much is government duties/taxes vs. everything else.</pre>
+      <button type="button" class="btn btn-primary" data-copy="p-quote">Copy prompt</button>
+    </div>
+</div>
+  <p class="muted" style="margin:0;font-size:14px">AI can make mistakes. Check every date and number against your actual documents, and confirm anything important with the Bureau of Customs.</p>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Pauwi Na</strong> is a free guide written by families who've shipped their homes back to the Philippines. It isn't legal advice, and customs rules change. Always confirm with the Bureau of Customs.</p>
+    <p>Sources: Customs Modernization and Tariff Act (RA 10863), CAO 06-2016, CMO 15-2017. <a href="glossary.html#links">Official links</a> · Last checked November 2026.</p>
+    <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a></p>
+  </div>
+</footer>
+</body>
+</html>

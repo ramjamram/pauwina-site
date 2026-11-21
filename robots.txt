@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pauwina.com/sitemap.xml
