@@ -47,7 +47,8 @@ def page(fname, title, desc, body, section=None, scripts=False):
 <meta property="og:url" content="{canonical}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pauwi Na">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FFF8EE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -58,7 +59,7 @@ def page(fname, title, desc, body, section=None, scripts=False):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">Pauwi Na<span>.</span><small>The balikbayan container guide</small></a>
+    <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="44" height="44"><span><b>Pauwi Na</b><small>The balikbayan container guide</small></span></a>
     <nav class="nav" aria-label="Main">{nav}</nav>
   </div>
 </header>
@@ -67,6 +68,7 @@ def page(fname, title, desc, body, section=None, scripts=False):
 </main>
 <footer class="site-footer">
   <div class="wrap">
+    <p class="bye">Ingat sa biyahe. Safe travels home.</p>
     <p><strong>Pauwi Na</strong> is a free guide written by families who've shipped their homes back to the Philippines. It isn't legal advice, and customs rules change. Always confirm with the Bureau of Customs.</p>
     <p>Sources: Customs Modernization and Tariff Act (RA 10863), CAO 06-2016, CMO 15-2017. <a href="glossary.html#links">Official links</a> · Last checked {CHECKED}.</p>
     <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a></p>
@@ -77,7 +79,18 @@ def page(fname, title, desc, body, section=None, scripts=False):
 """
 
 
+ILLUS = {
+    "chapter-1.html": ("us-home.svg", "Movers loading a container outside a family home abroad"),
+    "chapter-2.html": ("hero.svg", "A container ship crossing the ocean toward the Philippines"),
+    "chapter-4.html": ("manila-port.svg", "A container ship unloading at the Manila port"),
+    "chapter-6.html": ("new-home.svg", "A family unloading their container at their new home"),
+}
+
+
 def chapter(fname, num, eyebrow_title, h1, lead, body, prev, nxt, desc):
+    if fname in ILLUS:
+        src, alt = ILLUS[fname]
+        body = f'    <img class="illus" src="assets/img/{src}" alt="{alt}" width="480" height="300" loading="lazy">\n' + body
     side = "".join(
         f'<a href="{h}"{" aria-current=\"page\"" if h == fname else ""}>{n} · {t}</a>'
         for h, n, t in CHAPTERS
@@ -104,62 +117,7 @@ PAGES = {}
 # ---------------- HOME ----------------
 PAGES["index.html"] = page("index.html", "Pauwi Na: the balikbayan container guide",
 "A free, step-by-step guide for Filipino families shipping household goods home by container: the 60-day duty-free rule, customs, costs and carriers.",
-"""<div class="wrap hero">
-  <div class="stack" style="gap:22px">
-    <p class="eyebrow">For families moving home to the Philippines</p>
-    <h1>So you've decided to ship your life home.</h1>
-    <p class="lead">Here's everything between the day the truck leaves your driveway and the day the container reaches your door, told in plain words, one step at a time.</p>
-    <div class="btn-row"><a class="btn btn-primary" href="checklist.html">Am I ready? Take the checklist</a><a class="btn btn-outline" href="chapter-1.html">Read the story from the start</a></div>
-  </div>
-  <div class="card">
-    <p class="muted" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Your container's trip, at a glance</p>
-    <ol class="steps">
-      <li><span class="dotnum">1</span><div><strong>Pack &amp; list</strong><small>Itemized list with used values</small></div></li>
-      <li><span class="dotnum">2</span><div><strong>On the water</strong><small>45–60+ days from the US East Coast</small></div></li>
-      <li><span class="dotnum amber">3</span><div><strong>The 60-day clock</strong><small>Starts the day YOU land, not the day it ships</small></div></li>
-      <li><span class="dotnum">4</span><div><strong>Arrival notice</strong><small>15 days to file with customs once unloaded</small></div></li>
-      <li><span class="dotnum">5</span><div><strong>Customs &amp; release</strong><small>Declare, x-ray, pay, gate pass</small></div></li>
-      <li><span class="dotnum">6</span><div><strong>Home</strong><small>Truck it, unload, return the empty</small></div></li>
-    </ol>
-  </div>
-</div>
-<div class="wrap">
-  <div class="box box-amber" style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
-    <div class="stack" style="flex:1 1 480px;gap:8px">
-      <h2 style="font-size:26px">Before anything else: the 60-day clock</h2>
-      <p style="margin:0;font-size:17px">If you're a returning Filipino resident, your household goods have to arrive within 60 days of the day <strong>you</strong> land to get duty-free entry. Ship early, ideally before you fly.</p>
-    </div>
-    <a class="btn btn-amber" href="chapter-3.html">How the 60 days work</a>
-  </div>
-</div>
-<section class="section"><div class="wrap stack" style="gap:28px">
-  <div class="stack" style="gap:8px"><h2 style="font-size:clamp(28px,4vw,40px)">The guide, in six chapters</h2><p class="muted" style="margin:0;font-size:18px">Read them in order, or jump to where you are right now.</p></div>
-  <div class="grid">
-    <a class="card chapter-card" href="chapter-1.html"><span class="num">Chapter 1</span><h3>Before you ship</h3><span>Who should be the consignee, the inventory customs wants, receipts to keep, and what not to pack.</span></a>
-    <a class="card chapter-card" href="chapter-2.html"><span class="num">Chapter 2</span><h3>On the water</h3><span>The bill of lading, original vs. telex release, and tracking your container.</span></a>
-    <a class="card chapter-card hot" href="chapter-3.html"><span class="num">Chapter 3 · read this first</span><h3>The 60-day rule &amp; duty-free</h3><span>Who qualifies, how much is exempt, and what to do if you miss the window.</span></a>
-    <a class="card chapter-card" href="chapter-4.html"><span class="num">Chapter 4</span><h3>It's arrived in Manila</h3><span>Reading the arrival notice, the 15-day filing deadline, and the carrier's free days.</span></a>
-    <a class="card chapter-card" href="chapter-5.html"><span class="num">Chapter 5</span><h3>Customs, by yourself</h3><span>Informal entry, the PHED form, x-ray and inspection, and checking the assessment.</span></a>
-    <a class="card chapter-card" href="chapter-6.html"><span class="num">Chapter 6</span><h3>Release &amp; delivery</h3><span>The delivery order, gate pass, trucking, and returning the empty container for your deposit.</span></a>
-  </div>
-</div></section>
-<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap grid" style="padding:64px 24px;gap:48px">
-  <div class="stack">
-    <h2>Do I need a customs broker?</h2>
-    <p style="margin:0;font-size:17px;color:var(--muted)">Not by law. If your name is on the bill of lading as consignee, you can file the declaration yourself. Household goods usually go through the simpler <em>informal entry</em> process.</p>
-    <p style="margin:0;font-size:17px;color:var(--muted)">A broker can still save you days of going from window to window. Get any quote <strong>itemized</strong> first: most of a big number is usually duties, storage and port fees, not the broker's own fee.</p>
-    <p style="margin:0"><a href="chapter-5.html">How to do customs yourself →</a></p>
-  </div>
-  <figure class="box box-blue stack" style="margin:0">
-    <blockquote>“We landed July 3. Our container didn't leave Miami until September 11, so we'd already missed the 60 days before it ever sailed. Then a broker quoted us ₱500,000.”</blockquote>
-    <figcaption class="muted" style="font-size:15px">A family who moved home from North Carolina in 2026. <a href="chapter-3.html#missed">What to do if this happens to you</a></figcaption>
-  </figure>
-</div></section>
-<section class="section"><div class="wrap grid">
-  <div class="card stack"><h3>Not sure where you stand?</h3><p style="margin:0" class="muted">Answer eight questions and get your own to-do list.</p><a class="btn btn-primary" href="checklist.html" style="align-self:flex-start">Take the checklist</a></div>
-  <div class="card stack"><h3>Use AI to do the paperwork</h3><p style="margin:0" class="muted">Ready-made prompts for ChatGPT or Claude: read your arrival notice, value your inventory, draft letters.</p><a class="btn btn-outline" href="ai-helper.html" style="align-self:flex-start">Get the prompts</a></div>
-  <div class="card stack"><h3>What do all these words mean?</h3><p style="margin:0" class="muted">Arrastre, consignee, demurrage, PHED: plain-English definitions.</p><a class="btn btn-outline" href="glossary.html" style="align-self:flex-start">Open the glossary</a></div>
-</div></section>""", None)
+open(os.path.join(SRC, "home_body.html"), encoding="utf-8").read(), None)
 
 # ---------------- CHAPTER 1 ----------------
 PAGES["chapter-1.html"] = chapter("chapter-1.html", "1", "Before you ship", "Before the truck comes",
@@ -711,6 +669,7 @@ PAGES["about.html"] = page("about.html", "About Pauwi Na and contact",
     <h1>Written by a family who just did this.</h1>
     <p class="lead" style="max-width:none">We moved home from North Carolina in 2026. Our container arrived months after we did, we missed the 60-day window, and a broker quoted us ₱500,000. We built this guide so the next family knows what we didn't.</p>
   </div>
+  <img class="illus" src="assets/img/family.svg" alt="Illustration of a family in front of their delivered container" width="480" height="360" loading="lazy">
   <div class="card stack">
     <h2 style="font-size:24px">Our promise</h2>
     <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px">
@@ -745,8 +704,7 @@ def main():
             f.write(content)
     shutil.copy(os.path.join(SRC, "style.css"), os.path.join(OUT, "assets", "style.css"))
     shutil.copy(os.path.join(SRC, "app.js"), os.path.join(OUT, "assets", "app.js"))
-    with open(os.path.join(OUT, "assets", "favicon.svg"), "w") as f:
-        f.write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0B4F8A"/><path d="M14 40h36l-5 9H19z" fill="#fff"/><rect x="20" y="24" width="24" height="13" rx="2" fill="#fff"/><circle cx="48" cy="18" r="5" fill="#C2410C"/></svg>')
+    shutil.copytree(os.path.join(SRC, "img"), os.path.join(OUT, "assets", "img"))
     with open(os.path.join(OUT, "robots.txt"), "w") as f:
         f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     urls = "".join(f"<url><loc>{SITE}/{'' if n == 'index.html' else n}</loc></url>" for n in PAGES if n != "404.html")

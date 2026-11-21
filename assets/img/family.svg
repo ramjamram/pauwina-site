@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Illustration of a family standing in front of their delivered container, holding a Pauwi na sign">
+<rect width="480" height="360" rx="24" fill="#FFE8B3"/>
+<circle cx="380" cy="86" r="44" fill="#F2B705"/>
+<path d="M0 262h480v74a24 24 0 0 1-24 24H24A24 24 0 0 1 0 336z" fill="#7FBF6E"/>
+<rect x="60" y="132" width="360" height="130" rx="6" fill="#E0443A"/>
+<g stroke="#fff" stroke-width="4" opacity=".55"><path d="M92 144v106M124 144v106M156 144v106M188 144v106M220 144v106M252 144v106M284 144v106M316 144v106M348 144v106M380 144v106"/></g>
+<rect x="140" y="160" width="200" height="54" rx="10" fill="#fff"/>
+<text x="240" y="196" text-anchor="middle" font-family="Bricolage Grotesque, Inter, sans-serif" font-weight="800" font-size="30" fill="#0E3B66">Pauwi na!</text>
+<g>
+<circle cx="150" cy="226" r="16" fill="#8A5A3C"/><path d="M130 300v-50a20 20 0 0 1 40 0v50" fill="#0E3B66"/>
+<circle cx="200" cy="236" r="14" fill="#6B4A2A"/><path d="M182 300v-40a18 18 0 0 1 36 0v40" fill="#B4302A"/>
+<circle cx="250" cy="250" r="11" fill="#8A5A3C"/><path d="M236 300v-28a14 14 0 0 1 28 0v28" fill="#F2B705"/>
+<circle cx="300" cy="228" r="15" fill="#8A5A3C"/><path d="M281 300v-48a19 19 0 0 1 38 0v48" fill="#1F7A4D"/>
+<path d="M318 258l16-26" stroke="#1F7A4D" stroke-width="8" stroke-linecap="round"/>
+</g>
+</svg>

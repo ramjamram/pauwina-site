@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="A container ship at the Manila port with cranes at sunrise">
+<rect width="480" height="300" rx="24" fill="#FFE8B3"/>
+<circle cx="110" cy="150" r="54" fill="#F2B705"/>
+<path d="M0 196h480v80a24 24 0 0 1-24 24H24A24 24 0 0 1 0 276z" fill="#0E3B66"/>
+<rect x="300" y="174" width="180" height="22" fill="#5B6B7C"/>
+<g stroke="#E0443A" stroke-width="7" stroke-linecap="square" fill="none"><path d="M330 174V64h100M352 174V86M430 64v26"/><path d="M386 174V104"/></g>
+<path d="M330 64l100 0" stroke="#E0443A" stroke-width="7"/><path d="M420 90v36" stroke="#33414F" stroke-width="3"/><rect x="408" y="126" width="24" height="14" fill="#F2B705"/>
+<path d="M40 196h268l-24 40H64z" fill="#33414F"/>
+<g><rect x="74" y="164" width="40" height="30" rx="2" fill="#E0443A"/><rect x="118" y="164" width="40" height="30" rx="2" fill="#fff"/><rect x="162" y="164" width="40" height="30" rx="2" fill="#7FB3E0"/><rect x="206" y="164" width="40" height="30" rx="2" fill="#F2B705"/>
+<rect x="96" y="132" width="40" height="30" rx="2" fill="#F2B705"/><rect x="140" y="132" width="40" height="30" rx="2" fill="#E0443A"/><rect x="184" y="132" width="40" height="30" rx="2" fill="#fff"/></g>
+<rect x="252" y="140" width="34" height="54" rx="3" fill="#fff"/><rect x="258" y="148" width="22" height="8" rx="2" fill="#7FB3E0"/>
+<path d="M30 266c18-7 36-7 54 0s36 7 54 0 36-7 54 0M250 256c18-7 36-7 54 0s36 7 54 0 36-7 54 0" stroke="#7FB3E0" stroke-width="5" fill="none" stroke-linecap="round" opacity=".7"/>
+</svg>

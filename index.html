@@ -11,7 +11,8 @@
 <meta property="og:url" content="https://pauwina.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pauwi Na">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FFF8EE">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -22,70 +23,78 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">Pauwi Na<span>.</span><small>The balikbayan container guide</small></a>
+    <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="" width="44" height="44"><span><b>Pauwi Na</b><small>The balikbayan container guide</small></span></a>
     <nav class="nav" aria-label="Main"><a href="chapter-1.html">The guide</a><a href="checklist.html">Am I ready?</a><a href="carriers.html">Carriers</a><a href="ai-helper.html">AI helper</a><a href="costs.html">Costs</a><a href="glossary.html">Glossary</a></nav>
   </div>
 </header>
 <main id="main">
-<div class="wrap hero">
-  <div class="stack" style="gap:22px">
-    <p class="eyebrow">For families moving home to the Philippines</p>
-    <h1>So you've decided to ship your life home.</h1>
-    <p class="lead">Here's everything between the day the truck leaves your driveway and the day the container reaches your door, told in plain words, one step at a time.</p>
-    <div class="btn-row"><a class="btn btn-primary" href="checklist.html">Am I ready? Take the checklist</a><a class="btn btn-outline" href="chapter-1.html">Read the story from the start</a></div>
+<div class="wrap hero" style="padding-top:40px;padding-bottom:32px;gap:32px">
+  <div class="stack" style="gap:18px">
+    <p class="pill">Kabayan, welcome home</p>
+    <h1>Pauwi na! Let's bring your things home, too.</h1>
+    <p class="lead">From the truck in your driveway to the container at your door in the Philippines: every step, in plain words, from a family who just did it.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="checklist.html" style="flex:1 1 200px">Am I ready? Start here</a><a class="btn btn-outline" href="chapter-1.html" style="flex:1 1 200px;border-color:var(--blue);color:var(--blue)">Read the story</a></div>
   </div>
-  <div class="card">
-    <p class="muted" style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Your container's trip, at a glance</p>
-    <ol class="steps">
-      <li><span class="dotnum">1</span><div><strong>Pack &amp; list</strong><small>Itemized list with used values</small></div></li>
-      <li><span class="dotnum">2</span><div><strong>On the water</strong><small>45–60+ days from the US East Coast</small></div></li>
-      <li><span class="dotnum amber">3</span><div><strong>The 60-day clock</strong><small>Starts the day YOU land, not the day it ships</small></div></li>
-      <li><span class="dotnum">4</span><div><strong>Arrival notice</strong><small>15 days to file with customs once unloaded</small></div></li>
-      <li><span class="dotnum">5</span><div><strong>Customs &amp; release</strong><small>Declare, x-ray, pay, gate pass</small></div></li>
-      <li><span class="dotnum">6</span><div><strong>Home</strong><small>Truck it, unload, return the empty</small></div></li>
+  <img class="illus" src="assets/img/hero.svg" alt="A container ship sailing toward a Philippine island at sunrise" width="520" height="380">
+</div>
+
+<section class="wrap stack" aria-labelledby="voyage" style="gap:18px;padding-top:24px;padding-bottom:40px">
+  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px">
+    <div class="stack" style="gap:6px"><p class="eyebrow">The voyage</p><h2 id="voyage">Where is your container right now?</h2></div>
+    <span class="muted" style="font-size:14px">Tap the stop you're at. On a phone, swipe for more.</span>
+  </div>
+  <div class="voyage">
+    <svg class="voyage-line" aria-hidden="true" viewBox="0 0 1160 40" preserveAspectRatio="none"><path d="M0 20c48-16 97-16 145 0s97 16 145 0 97-16 145 0 97 16 145 0 97-16 145 0 97 16 145 0 97-16 145 0 97 16 145 0" fill="none" stroke="#7FB3E0" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/></svg>
+    <ol>
+      <li><a href="chapter-1.html"><span class="stop">1</span><span class="card-s"><small>Your home abroad</small><strong>Pack &amp; list</strong><span>Consignee, valued inventory, what not to pack</span></span></a></li>
+      <li><a href="chapter-2.html"><span class="stop">2</span><span class="card-s"><small>The ocean</small><strong>On the water</strong><span>Bill of lading, tracking, the arrival notice</span></span></a></li>
+      <li class="hot"><a href="chapter-3.html"><span class="stop">3</span><span class="card-s"><small>Read this first</small><strong>The 60-day clock</strong><span>Duty-free rules, and what to do if you miss it</span></span></a></li>
+      <li><a href="chapter-4.html"><span class="stop">4</span><span class="card-s"><small>Manila port</small><strong>It's arrived</strong><span>Free days, the 15-day deadline, first week</span></span></a></li>
+      <li><a href="chapter-5.html"><span class="stop">5</span><span class="card-s"><small>Bureau of Customs</small><strong>Customs</strong><span>Do it yourself: forms, x-ray, assessment</span></span></a></li>
+      <li class="end"><a href="chapter-6.html"><span class="stop">6</span><span class="card-s"><small>Your new home</small><strong>At your door</strong><span>Gate pass, trucking, your deposit back</span></span></a></li>
     </ol>
   </div>
-</div>
-<div class="wrap">
-  <div class="box box-amber" style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
-    <div class="stack" style="flex:1 1 480px;gap:8px">
-      <h2 style="font-size:26px">Before anything else: the 60-day clock</h2>
-      <p style="margin:0;font-size:17px">If you're a returning Filipino resident, your household goods have to arrive within 60 days of the day <strong>you</strong> land to get duty-free entry. Ship early, ideally before you fly.</p>
+</section>
+
+<section class="wrap" style="padding-bottom:40px">
+  <div class="band-dark">
+    <div class="stack" style="flex:1 1 420px;gap:8px">
+      <span class="kicker">Ingat! Don't miss this</span>
+      <h2>Your 60-day clock starts the day you land</h2>
+      <p>Returning residents get duty-free entry only if the container arrives within 60 days of <strong style="color:#fff">your</strong> arrival. Ship before you fly.</p>
     </div>
-    <a class="btn btn-amber" href="chapter-3.html">How the 60 days work</a>
+    <a class="btn btn-mango" href="chapter-3.html">How the 60 days work</a>
   </div>
-</div>
-<section class="section"><div class="wrap stack" style="gap:28px">
-  <div class="stack" style="gap:8px"><h2 style="font-size:clamp(28px,4vw,40px)">The guide, in six chapters</h2><p class="muted" style="margin:0;font-size:18px">Read them in order, or jump to where you are right now.</p></div>
-  <div class="grid">
-    <a class="card chapter-card" href="chapter-1.html"><span class="num">Chapter 1</span><h3>Before you ship</h3><span>Who should be the consignee, the inventory customs wants, receipts to keep, and what not to pack.</span></a>
-    <a class="card chapter-card" href="chapter-2.html"><span class="num">Chapter 2</span><h3>On the water</h3><span>The bill of lading, original vs. telex release, and tracking your container.</span></a>
-    <a class="card chapter-card hot" href="chapter-3.html"><span class="num">Chapter 3 · read this first</span><h3>The 60-day rule &amp; duty-free</h3><span>Who qualifies, how much is exempt, and what to do if you miss the window.</span></a>
-    <a class="card chapter-card" href="chapter-4.html"><span class="num">Chapter 4</span><h3>It's arrived in Manila</h3><span>Reading the arrival notice, the 15-day filing deadline, and the carrier's free days.</span></a>
-    <a class="card chapter-card" href="chapter-5.html"><span class="num">Chapter 5</span><h3>Customs, by yourself</h3><span>Informal entry, the PHED form, x-ray and inspection, and checking the assessment.</span></a>
-    <a class="card chapter-card" href="chapter-6.html"><span class="num">Chapter 6</span><h3>Release &amp; delivery</h3><span>The delivery order, gate pass, trucking, and returning the empty container for your deposit.</span></a>
-  </div>
-</div></section>
-<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap grid" style="padding:64px 24px;gap:48px">
-  <div class="stack">
-    <h2>Do I need a customs broker?</h2>
-    <p style="margin:0;font-size:17px;color:var(--muted)">Not by law. If your name is on the bill of lading as consignee, you can file the declaration yourself. Household goods usually go through the simpler <em>informal entry</em> process.</p>
-    <p style="margin:0;font-size:17px;color:var(--muted)">A broker can still save you days of going from window to window. Get any quote <strong>itemized</strong> first: most of a big number is usually duties, storage and port fees, not the broker's own fee.</p>
-    <p style="margin:0"><a href="chapter-5.html">How to do customs yourself →</a></p>
-  </div>
-  <figure class="box box-blue stack" style="margin:0">
-    <blockquote>“We landed July 3. Our container didn't leave Miami until September 11, so we'd already missed the 60 days before it ever sailed. Then a broker quoted us ₱500,000.”</blockquote>
-    <figcaption class="muted" style="font-size:15px">A family who moved home from North Carolina in 2026. <a href="chapter-3.html#missed">What to do if this happens to you</a></figcaption>
+</section>
+
+<section class="wrap" aria-labelledby="kwento" style="padding-bottom:48px;display:flex;flex-wrap:wrap;gap:28px;align-items:center">
+  <img class="illus" src="assets/img/family.svg" alt="Illustration of a family standing in front of their delivered container, holding a Pauwi na sign" width="480" height="360"  style="flex:1 1 320px;width:auto;max-width:100%;min-width:0">
+  <figure style="flex:1 1 400px;margin:0" class="stack">
+    <p class="eyebrow" id="kwento">Our kwento</p>
+    <blockquote style="font-size:clamp(22px,3vw,28px);font-weight:600;line-height:1.3">“We landed July 3. Our container didn't sail until September 11. Then a broker quoted us ₱500,000. So we figured it out ourselves, and wrote it all down for you.”</blockquote>
+    <figcaption class="muted" style="font-size:15px">The family behind Pauwi Na, home from North Carolina in 2026. <a href="about.html">Our story</a></figcaption>
   </figure>
-</div></section>
-<section class="section"><div class="wrap grid">
-  <div class="card stack"><h3>Not sure where you stand?</h3><p style="margin:0" class="muted">Answer eight questions and get your own to-do list.</p><a class="btn btn-primary" href="checklist.html" style="align-self:flex-start">Take the checklist</a></div>
-  <div class="card stack"><h3>Use AI to do the paperwork</h3><p style="margin:0" class="muted">Ready-made prompts for ChatGPT or Claude: read your arrival notice, value your inventory, draft letters.</p><a class="btn btn-outline" href="ai-helper.html" style="align-self:flex-start">Get the prompts</a></div>
-  <div class="card stack"><h3>What do all these words mean?</h3><p style="margin:0" class="muted">Arrastre, consignee, demurrage, PHED: plain-English definitions.</p><a class="btn btn-outline" href="glossary.html" style="align-self:flex-start">Open the glossary</a></div>
-</div></section>
+</section>
+
+<section class="wrap photo-row" style="padding-bottom:56px">
+  <figure class="illus-fig"><img class="illus" src="assets/img/us-home.svg" alt="Movers loading a container outside a family home abroad" width="480" height="300" ><figcaption>1 · Packing up abroad</figcaption></figure>
+  <figure class="illus-fig"><img class="illus" src="assets/img/manila-port.svg" alt="A container ship unloading at the Manila port" width="480" height="300" ><figcaption>4 · Arriving in Manila</figcaption></figure>
+  <figure class="illus-fig"><img class="illus" src="assets/img/new-home.svg" alt="A family unloading their container at their new home" width="480" height="300" ><figcaption>6 · Home at last</figcaption></figure>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap grid" style="padding-top:48px;padding-bottom:48px;gap:14px">
+    <a class="card chapter-card" href="checklist.html" style="background:var(--bg);border:0"><h3>Am I ready?</h3><span>8 questions, your own to-do list</span></a>
+    <a class="card chapter-card" href="ai-helper.html" style="background:var(--bg);border:0"><h3>AI helper</h3><span>Copy-paste prompts for ChatGPT and Claude</span></a>
+    <a class="card chapter-card" href="costs.html" style="background:var(--bg);border:0"><h3>What it costs</h3><span>Manila fees and a duty estimator</span></a>
+    <a class="card chapter-card" href="glossary.html" style="background:var(--bg);border:0"><h3>Glossary</h3><span>Arrastre, demurrage, PHED, in plain English</span></a>
+  </div>
+</section>
+
 </main>
 <footer class="site-footer">
   <div class="wrap">
+    <p class="bye">Ingat sa biyahe. Safe travels home.</p>
     <p><strong>Pauwi Na</strong> is a free guide written by families who've shipped their homes back to the Philippines. It isn't legal advice, and customs rules change. Always confirm with the Bureau of Customs.</p>
     <p>Sources: Customs Modernization and Tariff Act (RA 10863), CAO 06-2016, CMO 15-2017. <a href="glossary.html#links">Official links</a> · Last checked November 2026.</p>
     <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a></p>

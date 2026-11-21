@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Movers loading a shipping container outside a family home abroad">
+<rect width="480" height="300" rx="24" fill="#DCEBF7"/>
+<circle cx="404" cy="62" r="26" fill="#FFF1D6"/>
+<path d="M0 222h480v54a24 24 0 0 1-24 24H24A24 24 0 0 1 0 276z" fill="#9CC59A"/>
+<path d="M210 222l40 78h-70l10-78z" fill="#D9D2C5"/>
+<path d="M40 130l90-62 90 62v92H40z" fill="#F4F1EA"/>
+<path d="M28 136l102-74 102 74" fill="none" stroke="#5B6B7C" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="64" y="150" width="36" height="30" rx="3" fill="#7FB3E0"/><rect x="160" y="150" width="36" height="30" rx="3" fill="#7FB3E0"/>
+<rect x="114" y="172" width="32" height="50" rx="3" fill="#0E3B66"/>
+<circle cx="56" cy="214" r="18" fill="#3E8B57"/><circle cx="210" cy="214" r="14" fill="#3E8B57"/>
+<rect x="250" y="138" width="196" height="76" rx="4" fill="#E0443A"/>
+<g stroke="#fff" stroke-width="3" opacity=".75"><path d="M272 146v60M294 146v60M316 146v60M338 146v60M360 146v60M382 146v60M404 146v60M426 146v60"/></g>
+<rect x="244" y="214" width="208" height="10" rx="3" fill="#33414F"/>
+<circle cx="280" cy="234" r="12" fill="#1C2733"/><circle cx="420" cy="234" r="12" fill="#1C2733"/>
+<rect x="238" y="186" width="34" height="28" rx="2" fill="#C99A5B"/><path d="M238 196h34" stroke="#A97D43" stroke-width="3"/>
+<circle cx="224" cy="160" r="9" fill="#8A5A3C"/><path d="M214 210v-28a10 10 0 0 1 20 0v28" fill="#0E3B66"/>
+<circle cx="458" cy="168" r="0"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="A family unloading their container at their new home in the Philippines">
+<rect width="480" height="300" rx="24" fill="#FFF1D6"/>
+<circle cx="400" cy="70" r="34" fill="#F2B705"/>
+<path d="M0 220h480v56a24 24 0 0 1-24 24H24A24 24 0 0 1 0 276z" fill="#7FBF6E"/>
+<path d="M64 140l76-50 76 50v80H64z" fill="#fff"/>
+<path d="M50 146l90-62 90 62" fill="none" stroke="#B4302A" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="88" y="156" width="30" height="26" rx="3" fill="#7FB3E0"/><rect x="162" y="156" width="30" height="26" rx="3" fill="#7FB3E0"/>
+<rect x="124" y="174" width="32" height="46" rx="3" fill="#8A5A3C"/>
+<path d="M30 220c2-40 4-80 0-118" stroke="#6B4A2A" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M30 102c-16-8-34-6-46 6M30 102c14-12 32-14 46-6M30 102c-6-14-20-24-36-24M30 102c6-14 20-22 36-20" stroke="#1F7A4D" stroke-width="8" fill="none" stroke-linecap="round"/>
+<rect x="262" y="148" width="190" height="72" rx="4" fill="#E0443A"/>
+<rect x="262" y="148" width="34" height="72" fill="#0E3B66" opacity=".35"/>
+<g stroke="#fff" stroke-width="3" opacity=".7"><path d="M318 156v56M340 156v56M362 156v56M384 156v56M406 156v56M428 156v56"/></g>
+<rect x="232" y="196" width="28" height="24" rx="2" fill="#C99A5B"/><rect x="226" y="176" width="22" height="20" rx="2" fill="#D9B27A"/>
+<circle cx="214" cy="166" r="9" fill="#8A5A3C"/><path d="M204 220v-38a10 10 0 0 1 20 0v38" fill="#0E3B66"/>
+<path d="M222 182l14-20" stroke="#0E3B66" stroke-width="6" stroke-linecap="round"/>
+<circle cx="190" cy="186" r="7" fill="#8A5A3C"/><path d="M182 220v-24a8 8 0 0 1 16 0v24" fill="#F2B705"/>
+<path d="M196 202l10-16" stroke="#F2B705" stroke-width="5" stroke-linecap="round"/>
+</svg>
