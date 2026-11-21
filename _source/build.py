@@ -52,6 +52,12 @@ def page(fname, title, desc, body, section=None, scripts=False):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WL6CDM4P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+</script>
 <link rel="stylesheet" href="assets/style.css">
 {js}
 </head>
@@ -71,7 +77,7 @@ def page(fname, title, desc, body, section=None, scripts=False):
     <p class="bye">Ingat sa biyahe. Safe travels home.</p>
     <p><strong>Pauwi Na</strong> is a free guide written by families who've shipped their homes back to the Philippines. It isn't legal advice, and customs rules change. Always confirm with the Bureau of Customs.</p>
     <p>Sources: Customs Modernization and Tariff Act (RA 10863), CAO 06-2016, CMO 15-2017. <a href="glossary.html#links">Official links</a> · Last checked {CHECKED}.</p>
-    <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a></p>
+    <p><a href="index.html">Home</a> · <a href="chapter-1.html">The guide</a> · <a href="checklist.html">Am I ready?</a> · <a href="carriers.html">Carriers</a> · <a href="glossary.html">Glossary</a> · <a href="about.html">About &amp; contact</a> · <a href="about.html#privacy">Privacy</a></p>
   </div>
 </footer>
 </body>
@@ -720,6 +726,12 @@ PAGES["about.html"] = page("about.html", "About Pauwi Na and contact",
     <h2 style="font-size:24px;color:var(--green-ink)">Share your experience</h2>
     <p style="margin:0">Which forwarder and shipping line did you use? What did you pay in Manila, and how long did each step take? Your story helps the next family.</p>
     <a class="btn btn-dark" href="mailto:hello@pauwina.com?subject=My%20container%20experience" style="align-self:flex-start">Email us your story</a>
+  </div>
+  <div class="card stack" id="privacy" style="gap:10px">
+    <h2 style="font-size:24px">Privacy</h2>
+    <p style="margin:0">We use Google Analytics (through Google Tag Manager) to count visits and see which pages help people most. It uses cookies and collects things like the pages you view, your device type and your approximate location. We don't sell this data or use it for ads.</p>
+    <p style="margin:0">Our checklist and duty estimator run only in your browser. Nothing you type into them is sent to us or to Google. The AI prompts are for you to use in your own ChatGPT or Claude account.</p>
+    <p style="margin:0">You can block analytics cookies in your browser settings, or with Google's opt-out browser add-on. Questions? Email <a href="mailto:hello@pauwina.com">hello@pauwina.com</a>.</p>
   </div>
   <p class="muted" style="margin:0;font-size:15px">Contact: <a href="mailto:hello@pauwina.com">hello@pauwina.com</a></p>
 </div>""", None)
