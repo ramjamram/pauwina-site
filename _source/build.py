@@ -10,6 +10,7 @@ CHECKED = "November 2026"
 NAV = [
     ("chapter-1.html", "The guide", "guide"),
     ("checklist.html", "Am I ready?", "checklist"),
+    ("clear-container.html", "Clearing", "clear"),
     ("carriers.html", "Carriers", "carriers"),
     ("ai-helper.html", "AI helper", "ai"),
     ("costs.html", "Costs", "costs"),
@@ -253,6 +254,11 @@ PAGES["chapter-4.html"] = chapter("chapter-4.html", "4", "It's arrived in Manila
       <div class="clock red"><strong>30 days</strong><span>Uncollected goods can be treated as abandoned and sold. Don't let it get anywhere near this.</span></div>
     </div>
 
+    <div class="box box-amber" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+      <span style="flex:1 1 320px"><strong>Arrival notice in hand?</strong> Our step-by-step guide has copy-ready messages for the shipping line and Customs.</span>
+      <a class="btn btn-amber" href="clear-container.html">How to clear your container</a>
+    </div>
+
     <h2>Your first week, in order</h2>
     <ol>
       <li><strong>Email the shipping line's import desk.</strong> Ask for the actual unloading date, their invoice of local charges, your free days, and where to return the empty container. Contacts are on the <a href="carriers.html">Carriers</a> page.</li>
@@ -276,7 +282,9 @@ PAGES["chapter-4.html"] = chapter("chapter-4.html", "4", "It's arrived in Manila
 # ---------------- CHAPTER 5 ----------------
 PAGES["chapter-5.html"] = chapter("chapter-5.html", "5", "Customs, by yourself", "Yes, you can do customs yourself",
 "The law doesn't require a broker. If you're the consignee, you can file. It takes patience and a folder of copies.",
-"""    <h2>Your folder</h2>
+"""    <p class="muted" style="font-size:16px">Need the messages to send Customs and the shipping line? See <a href="clear-container.html">How to Clear a Container of Household Goods in Manila</a>.</p>
+
+    <h2>Your folder</h2>
     <div class="card folder">
       <label><input type="checkbox"> Bill of lading (original or telex)</label>
       <label><input type="checkbox"> Arrival notice and delivery order</label>
@@ -703,6 +711,11 @@ PAGES["glossary.html"] = page("glossary.html", "Glossary of shipping and customs
     """ + lk + """
   </section>
 </div>""", "glossary", scripts=True)
+
+# ---------------- CLEAR CONTAINER ----------------
+PAGES["clear-container.html"] = page("clear-container.html", "How to Clear a Container of Household Goods in Manila",
+"What to do after your container of household goods arrives in Manila: who to contact, what the shipping line and Customs need, deposits vs. duties, valuing used furniture, and unloading at the port.",
+open(os.path.join(SRC, "clear_body.html"), encoding="utf-8").read(), "clear", scripts=True)
 
 # ---------------- ABOUT ----------------
 PAGES["about.html"] = page("about.html", "About Pauwi Na and contact",

@@ -47,7 +47,7 @@
       if (a.window === 'no') add(r, 'warn', 'You may be past the 60-day window', 'There’s no written extension process, but you can still ask. Read <a href="chapter-3.html#missed">“What if I already missed it?”</a> before you pay anyone.');
       if (a.window === 'unsure') add(r, 'todo', 'Work out your 60-day date', 'Take your arrival stamp date and add 60 days. Compare it with the ETA on your arrival notice.');
       if (a.notice === 'no' || a.notice === 'unsure') add(r, 'todo', 'Get your arrival notice', 'Ask your forwarder (the company that picked up your goods) which shipping line has your container and the bill of lading number.');
-      if (a.notice === 'yes') add(r, 'good', 'Arrival notice: done', 'Check the vessel ETA and the pick-up terminal. You have 15 days from unloading to file with customs. <a href="chapter-4.html">Chapter 4</a>');
+      if (a.notice === 'yes') add(r, 'good', 'Arrival notice: done', 'Check the vessel ETA and the pick-up terminal. You have 15 days from unloading to file with customs. <a href="clear-container.html">What to do now: step by step</a>');
       if (a.bl === 'no' || a.bl === 'unsure') add(r, 'warn', 'Chase your bill of lading now', 'This is what usually holds up release. Ask your forwarder to courier the original, or switch to a telex release.');
       if (a.list === 'no' || a.list === 'unsure') add(r, 'todo', 'Make your valued inventory', 'Type every item with a realistic used value, in plain words: “used 3-seat couch,” “framed prints (reproductions).” <a href="ai-helper.html">Our AI prompt can help</a>');
       if (a.passport === 'no' || a.passport === 'unsure') add(r, 'todo', 'Copy your passport pages', 'Photo page, plus the departure and arrival stamps.');
